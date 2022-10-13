@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <style type="text/css">
+    *{background-color: #080403; color: white}
+.logo{
+  width: auto; height: 500px; margin: 20px auto; 
+}
+div{display: flex; justify-content: center; }
+img{max-width: 100%; height: auto;}
+h2{text-align: center; font-size: 40px; }
+h4{font-size: 30px; }
+p{font-size: 20px; }
+h4, p{margin: 40px 40px; }
+.special{text-align: center; }
+ul{font-size: 20px; text-align: left; list-style: inside; list-style-position: inside; padding-left: 0; display: inline-block;}
+nav {color: white; }
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 10%; list-style-type: none; font-size: 30px
+}
+nav > ul > li:hover {
+  background-color: #dfdfe2;
+  color: #1b1b32;
+  cursor: pointer;}
+  
+  @media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+#assumed {text-align: center;
+}
+    </style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>ForHonorCombatBasics</title>
+  </head>
+  <main id="main-doc">
+    <div class="logo"><img src="https://th.bing.com/th/id/OIP.F0MnkpjSxWa8rbDNtS0yWgHaEK?pid=ImgDet&rs=1"></div>
+    <nav id="navbar">
+      <header><h2 class="section-title">Introduction to For Honor Combat</h2></header>
+        <ul>
+         <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+         <li><a class="nav-link" href="#Basic_Mechanics_&_User_Interface_(UI)">Basic Mechanics & User Interface (UI)</a></li>
+         <li><a class="nav-link" href="#Offensive_Maneuvers">Offensive Maneuvers</a></li>
+         <li><a class="nav-link" href="#Defensive_Maneuvers">Defensive Maneuvers</a></li>
+         <li><a class="nav-link" href="#Move_Properties">Move Properties</a></li>
+          <li><a class="nav-link" href="#Attack_Effects">Attack Effects</a></li>
+        </ul>
+    </nav>
+    <section id="Introduction" class="main-section">
+      <header><h2 class="section-title">Introduction</h2></header>
+	<p>For Honor is a historic melee fighting game published by Ubisoft in 2017. You take control of a character from a variety of ancient factions, fighting other players in 1v1, 2v2, or 4v4 matches.</p><p>For Honor is a unique game with an unconventional combat system, even when compared to other games in its niche. This guide is an introduction to that system, explaining common attacks, controls, mechanics, and properties. It will <b>not</b> cover individual character movesets or interactions.</p>
+	<h4 class="subhead" id="assumed">Assumed Knowledge</h4>
+		<div class="list"><ul id="list">
+		<li>The Sony Playstation controller and button layout. Refer to the Controller Layout section of the game's Settings for equivalent inputs on other platforms</li>
+		<li>Generic knowledge of video game and fighting game terms</li>
+		<li></li>
+		</ul></div>
+    </section>
+    <section id="Basic_Mechanics_&_User_Interface_(UI)" class="main-section">
+      <header><h2 class="section-title">Basic Mechanics & User Interface (UI)</h2></header>
+	<h4 class="subhead" id="lockon">Lock-On</h4>
+		<p>Hold L2 to lock onto an opponent. The combat system is based on this lock-on; most maneuvers can only be performed while locked onto an opponent. Locking on focuses the camera on an opponent and activates the combat UI for both yourself and the opponent. If there is no enemy nearby, holding L2 will still activate your own combat UI.</p>
+    	<h4 class="subhead" id="ai">AI Soldiers</h4>
+		<p>In objective-based gamemodes such as Dominion and Breach, there will be basic AI-controlled soldiers that automatically spawn for both teams. These AI soldiers are different from Bots, which are simply computer-controlled characters that otherwise behave exactly like a human player. The AI's exact role depends on the gamemode. All modes with AI have melee units. These have very little health and damage (although both values are higher in Breach), but can still be dangerous if you are swarmed by them. They also are incapable of blocking attacks. In addition, Breach has two more types: Archers and Officers. Archers target and damage other enemy AI units with arrows. Officers are larger units who have much higher health and damage; they can also block your attacks. However, unlike other AI units, you can <a class="nav-link" href="#execution">Execute</a> them, granting the same benefits as Executing a normal player.</p>
+	<h4 class="subhead" id="feats">Feats</h4>
+		<p>Feats are powerful abilities you unlock throughout the course of any match against multiple opponents (feats are <b>not</b> available in 1v1 modes). Any action, from killing an enemy to capturing an objective, generates points towards unlocking your feats. There are four tiers of feats, with each successive tier becoming more powerful while also taking longer to unlock. Every character can select one feat for each tier. Although what feats you have access to vary by character, everyone has 12 to choose from: 3 options per tier across 4 tiers.</p>
+		<p>In addition, there are two types of feats: Passive and Active. Passive feats are bonuses that are either always active or automatically activate when certain conditions are met. Examples of passive feats include Body Count, which grants health and stamina upon killing AI soldiers, and Deadly Duet, which boosts your damage against an enemy who is alone. Active feats must be used manually by pressing the corresponding direction on the D-Pad and require a cooldown between uses. Examples include Kunai, which throws a knife at your opponent, and Unblockable, which gives all of your attacks the <a class="nav-link" href="#unblockable">Unblockable</a> property for 20 seconds.</p>
+	</section>
+    <section id="Offensive_Maneuvers" class="main-section">
+      <header><h2>Offensive Maneuvers</h2></header>
+        <h4 class="subhead" id="basic_attack">Basic Attacks</h4>
+        <p>Press the R1 button to perform a Light Attack. Light Attacks are faster than other attacks but are less damaging. The R2 button will perform a Heavy Attack. Heavy Attacks are slower but much more powerful. Both Light and Heavy attacks strike from the current <a class="nav-link" href="#guard">Guard</a> direction. If you are not locked on to an opponent, you cannot control the direction these attacks come from.</p> <p>Pressing R1 and R2 simultaneously will perform a Zone Attack. Zone Attacks cost more stamina than other attacks, but typically have a much larger range. Unlike Light and Heavy Attacks, a Zone Attack will always come from a pre-determined direction based on your current character.</p><p>Attacking removes your Guard, leaving you open to an enemy attack even if your Guard is in the proper direction. Unless the attack has the Hyper Armor property, any enemy attack will interrupt your strike.</p>
+    <h4 class="subhead" id="gb">Guard Break</h4><p>Press the Square button to perform a Guard Break (GB). A GB is a non-directional, unblockable move that, if successful, will open up your opponent's guard for a short period of time, allowing a free attack (as long as it isn't too slow-the best attack you get off a successful GB varies by character).</p><p>There are three different GB-related states an opponent can be in: Vulnerable, Neutral, and Immune. An enemy is GB Neutral if they are currently not taking any action. A Neutral enemy can still be hit by the attack but will have the opprotunity to perform a Counter GB. A GB Immune enemy will not be interrupted or otherwise affected by the attempt. The Immune state typically happens while in an attack animation. A GB Vulnerable enemy cannot counter a GB attempt. Enemies are Vulnerable while dodging/rolling, in a <a class="nav-link" href="#full_guard">Full Guard</a> stance, while in an attack recovery period, or during the startup of basic attacks. Heavy Attacks have a much longer Vulnerable startup period than Light Attacks.</p><p class="special">**GB attempts against a Vulnerable opponent deceptively have a deceptively much longer reach than GB attempts at other times. This means, for example, if you attempt a GB while your opponent is out of range, you will miss the attack. However, the opponent can then get a guaranteed GB as you are Vulnerable even if the distance does not close**</p>
+    <h4 class="subhead" id="throw">Throws</h4><p>Throws are performed by pressing the Square button after successfully Guard Breaking an opponent. A Throw will push the opponent in whatever direction the Left Stick is held. Throws can knock opponents from ledges or Wallsplat them. Additionally, if you are in Revenge mode or the opponent is out of stamina, a throw will Unbalance them.</p>
+    <h4 class="subhead" id="bash_attack">Bash Attacks</h4><p>Unlike earlier manuevers, Bash Attacks are not universal. However, almost every character has at least one somewhere in their Moveset. Bash Attacks are typically performed by pressing Square during an <a class="nav-link" href="#chain">Attack Chain</a> or Dodge. See the <a class="nav-link" href="#bash_type">Bash Attack Type</a> for more information on Bash Attack properties.</p>
+    <h4 class="subhead" id="dodge_attack">Dodge Attacks</h4><p>A Dodge Attack is performed by pressing the X button followed by the appropriate attack button. These allow you to simultaneously avoid an attack and respond with one of your own. There are three types of Dodge Attack: Heavy (X+R2), Light (X+R1), and Bash (X+Square). Although there are a few exceptions, Dodge Attacks take on the characteristics of their associated standard attack type (for example, a Light Dodge Attack will grant a Light Parry). Every character has at least one Dodge Attack; however, not all characters have all three types.</p><p> Additionally, Dodge Attack properties can change depending on its abilities. Non-feintable attacks are immune to GBs after the initial startup period and have i-frames, or frames during which they cannot be hit by an enemy attack. Feintable dodge attacks have multiple options, but are not GB immune and typically don't have i-frames.</p>
+    <h4 class="subhead" id="chain">Attack Chains</h4><p>Attack Chains are sequences of attacks that, if performed together, grant access to new moves or attack properties that would otherwise be unavailable. Chains cannot be continued if the attack is blocked, unless that attack is Enhanced.</p><p>There are three components to a Chain: Openers, Chains, and Finishers. Openers are the first part of the Chain and usually don't have any special properties, as they're available from the neutral position. Chains are any attack preceded by an Opener and followed by a Finisher. Thus, a two-attack Chain will not have this component. Chains flow together faster than non-chain moves and are usually more damaging than openers. Finishers are usually more damaging and can be granted special Attack Types. Attack Chains are unique to each character and can be seen in their Moveset. Below is a breakdown of the character Warmonger and how her attack chains function.</p><p>As can be seen in her Moveset, Warmonger's Vanguard's Bane chain is Light-Light-Heavy. Using the components discussed above, the first attack is a Light Opener, the second is a Chain Light, and the final attack is a Heavy Finisher. She also has Warmonger's Wrath, a Heavy-Heavy chain comprised of a Heavy Opener followed by a Heavy Finisher. Now, note that her Moveset states that Heavy Finisher attacks have <a class="nav-link" href="#hyper_armor">Hyper Armor</a>. Thus, the final attack in both the Vanguard's Bane and Warmonger's Wrath chain will have Hyper Armor, while the Heavy Opener in the latter and none of the Light Attacks in the former will have this property. Additionally, her Preying Claw move is performed in a chain by pressing Square after a Light Attack; this can thus be performed after either a Light Opener or Chain Light, replacing the other moves in the chain. Applying this example to other Movesets will show you how your chosen character can chain attacks together and what options and benefits they have for doing so.</p>
+    <h4 class="subhead" id="feint">Feints</h4><p>Feints involve cancelling an attack into another action. There are two categories of Feints: Soft Feints & Hard Feints.</p><p>A Hard Feint is performed by pressing Circle during a feintable attack. Feintable attacks include all Heavy Attacks. Certain Zone, Bash, and Dodge Attacks are also feintable, depending on the character you're playing. A Hard Feint completely cancels the attack, returning you to a neutral position while costing some stamina. The recovery period of a feint is very low, allowing you to almost immeditely perform another action. Note that any feintable attack only has a certain window it can be cancelled during, which varies by character and move.</p><p>Soft Feints do not have a single input, as they are highly character-dependent. A Soft Feint cancels one move directly into another and are performed by pressing the appropriate button during the attack animation (for example, Raider can Soft Feint a Heavy Attack into his Storming Tap move by pressing R1 during the Heavy Attack). Soft Feints do not cost any additional stamina to perform. Review your character's Moveset to see if they are able to perform any Soft Feints.</p>
+	<h4 class="subhead" id="execution">Executions</h4>
+		<p>An execution is an animation that leaves your opponent unable to be revived by a teammate while healing your character. The amount healed is based upon the length of the execution animation, with the maximum amount at 50hp. To perform an execution, finish an opponent with a Heavy Attack while they are standing; you must remain locked onto the now-dead opponent. You are then given a choice of which execution to perform. Up to four executions can be selected at once: They can be assigned to tapping Triangle, holding Triangle, tapping Square, or holding Square (these buttons are assigned in the customization menu outside of battle). Your character will then perform the assigned execution animation. Be aware that you are vulnerable while executing. If any attack from either opponent or AI hits you, your execution will be interrupted. Note that the "kill time" of an execution is different from the overall animation length. Your enemy is unable to be revived and you will be healed at the "kill time." However, you'll be vulnerable until the entire animation has played out.</p>
+	<h4 class="subhead" id="running_attack">Running Attack</h4>
+		<p>A running attack is a unique attack that preserves foward momentum and can be useful for chasing down an opponent or attacking out of a sprint without losing momentum. To perform a Running Attack, you must not be locked onto an enemy and sprinting. Similar to Dodge Attacks, you must then press either Square, R1, or R2, depending on the Moveset of your character.</p>
+    </section>
+    <section id="Defensive_Maneuvers" class="main-section">
+      <header><h2 class="section-title">Defensive Maneuvers</h2></header><code></code>
+      <h4 class="subhead" id="guard">Guard</h4><p>Your Guard represents what direction you're currently blocking. There are three possible position: Top, Right, and Left. Switch your Guard by moving the Left Stick in the desired direction. If your Guard position matches the direction of an incoming blockable attack, you'll automatically block it. Blocking an attack does not completely negate damage; a you'll still recieve a very small amount of "chip" damage. However, you cannot be killed by chip damage.</p>
+     <h4 class="subhead" id="parry">Parry</h4><p>Parry an attack by pressing R2 right before the attack connects. This timing is indicated by the red attack indicator flashing. Parrying an attack will negate all chip damage and momentarily leave your opponent unable to perform any actions. The duration they are frozen for depends on what attack was parried. Parrying a Heavy or Zone attack grants a Heavy Parry. Heavy Parries freeze the opponent for a short amount of time, usually only enough for a Light or Zone attack (the exact punish is character-dependent). Parrying a Light Attack freezes them for much longer, usually enough for a Heavy Attack. Both types of Parries use the same animation; you can tell the difference by a bright flash that only accompanies a Light Parry. All directional attacks can be parried, even if they're Unblockable. Non-directional attacks, like Bashes or GBs, cannot be. Additionally, some characters have special moves that can only be accessed after a Parry.</p>
+      <h4 class="subhead" id="dodge">Dodging & Rolling</h4><p>A Dodge is performed by pressing X. A Dodge is a short dash that can be performed in any direction and allows your character to move out of the way of an attack.Dodges are GB Vulnerable.</p><p>Rolling is performed by double-tapping the X button. Rolling is an escape maneuver that puts significant distance between yourself and your opponent. It can also be done when not locked on to an opponent.</p>
+     <h4 class="subhead" id="revenge">Revenge</h4><p>Revenge is a special mechanic that can only occur in fights when you are outnumbered. Revenge mode is triggered by pressing Triangle after the meter is filled. The meter fills based on the number of tags applied to your character. A tag is applied when an enemy attacks you. These Tags expire after five seconds. Once you have two or more tags applied to you, the Revenge meter will begin to fill based on how many attacks either hit or are blocked by you. Parrying attacks or getting hit by Bash attacks fills the meter faster than other methods. Note that you can only gain revenge if you have more tags applied than your opponents. If it's a 2v2 battle, and every combatanant hits both of their enemies, than every fighter will have 2 tags and no one will gain any Revenge.</p><p>While in Revenge mode, you recieve a number of benefits. All attacks do more damage and. They are also Hyper Armored and Enhanced. You have infinite stamina, carrying or Throwing an enemy will Unbalance them, and you will recieve a large shield protecting your health bar (this shield can be depleted by enemy attacks). Finally, activating Revenge mode will automatically Parry and Unbalance any enemy that hits you during the initial animation. You will automatically exit Revenge mode after a few seconds.</p>
+    </section>
+    <section id="Move_Properties" class="main-section">
+      <header><h2 class="section-title">Move Properties</h2></header>
+      <div class="list">
+        <ul id="list">
+        <li class="properties">Enhanced</li>
+        <li class="properties">Unblockable</li>
+        <li class="properties">Undodgeable</li>
+        <li class="properties">Hyper Armor</li>
+        <li class="properties">Bash</li>
+        <li class="properties">Bleed</li>
+        <li class="properties">Superior Block</li>
+        <li class="properties">Full Guard</li>
+       </ul>
+     </div>
+    <h4 class="subhead" id="enhanced">Enhanced</h4><p>Enhanced attacks allow you to continue Attack Chains even if the attack is blocked. Most Heavy Attacks are Enhanced, while Light Attacks are more dependent on character or place in a chain. Enhanced attacks do not have a UI indicator.</p>
+    <h4 class="subhead" id="unblockable">Unblockable</h4><p>Unblockable attacks cannot be blocked by any means, including Full Guard. However, they can still be Parried. Unblockable attacks are signified by an orange diamond.</p>
+    <h4 class="subhead" id="undodgeable">Undodgeable</h4><p>Undodgeable attacks automatically track and hit dodging opponents. This includes rolls and Dodge Attacks. Undodgeable Attacks also ignore i-frames from the latter. These attacks leave a blue trail behind the weapon.</p>
+    <h4 class="subhead" id="hyper_armor">Hyper Armor</h4><p>Hyper Armored attacks cannot be interrupted by most attacks. However, Bash Attacks will still interrupt them. Hyper Armored attacks are indicated by a white, translucent layer during the animation.</p>
+    <h4 class="subhead" id="bash_type">Bash</h4><p>Bashes are non-directional attacks that cannot be blocked or parried, only dodged. Not all bashes do direct damage; some instead reduce the enemy's stamina or stagger them enough to confirm a more traditional attack. Bash Attacks cover the enemy in an orange layer accompanied by an orange diamond.</p>
+    <h4 class="subhead" id="bleed">Bleed</h4><p>Bleed attacks apply a damage-over-time effect to the opponent. The amount of damage the attack will do is signified by the relevant portion of the opponent's health bar turning red. Bleed can stack, meaning that if a second Bleed attacking hits an already bleeding opponent, the total damage done will be extended. Bleed attacks cover the attacker's weapon in red.</p>
+    <h4 class="subhead" id="superior"">Superior Block</h4><p>Superior Block attacks keep your Guard active during the attack and interrupt blockable enemy attacks from the same direction, including Enhanced attacks. If an attack is interrupted by a Superior Block, it will typically gain additional damage or other properties. There is no UI indicator for Superior Block.</p>
+    <h4 class="subhead" id="full_guard">Full Guard</h4><p>Full Guard moves activate your Guard in all three directions, thus blocking most attacks. Full Guard moves typically grant a special attack upon blocking an enemy's attack. Unblockables, Bashes, and GBs will beat a Full Guard. Full Guard is indicated by activating all three Guard directions simultaneously.</p>
+    </section>
+    <section id="Attack_Effects" class="main-section">
+      <header><h2 class="section-title">Attack Effects</h2></header>
+      <div class="list">
+        <ul id="list">
+         <li class="attack-effect">Unbalance</li>
+         <li class="attack-effect">Wallsplat</li>
+         <li class="attack-effect">Pin</li>
+         <li class="attack-effect">Stun</li>
+         <li class="attack-effect">Ledging</li>
+        </ul>
+      </div>
+      <h4 class="subhead" id="unbalance">Unbalance</h4><p>Moves that Unbalance opponents knock them from their feet, leaving them open to attack. Certain characters also have special follow-up moves that can only be used on Unbalanced opponents. Any character can Unbalance an enemy by Parrying or Throwing an opponent who is out of stamina or doing one of these actions while you are in Revenge mode.</p>
+      <h4 class="subhead" id="wallsplat">Wallsplat</h4><p>Wallsplats occur from being Thrown or hit with specific moves that push your character into a wall. Hitting the wall will cause the Wallsplat animation, during which your character is entirely vulnerable. Wallsplat vulnerability is among the longest vulnerable periods available.</p>
+      <h4 class="subhead" id="pin">Pin</h4><p>Pin moves hold an opponent in place, leaving them unable to perform any actions. This primarily gives any allies a free opening to hit the Pinned oppnent. Note that Pin moves only occur from specific moves that require continuous action from the attacker. Thus, a Pinned opponent is not open to any additional punishment from the attacker beyond what the move specifically allows.</p>
+      <h4 class="subhead" id="stun">Stun</h4><p>The Stun effect will cause a bright white flash on the opponent's screen and temporarily prevent them from seeing your Guard indicator.</p>
+      <h4 class="subhead" id="ledge">Ledging</h4><p>Ledging occurs when an attack or maneuver knocks an opponent against a ledge, causing them to fall off that ledge. Any move that can Wallsplat or Unbalance can Ledge an opponent; however, some moves can Ledge that cannot cause either of those effects. Falling off a ledge will damage an opponent if the fall is short, or immedietaly kill them if it is a high ledge or one above a hazard.</p>
+    </section>
+  </main>
+</html>
