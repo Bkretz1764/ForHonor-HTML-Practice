@@ -28,6 +28,8 @@ nav > ul > li:hover {
   background-color: #dfdfe2;
   color: #1b1b32;
   cursor: pointer;}
+.link:hover{ color: rgb(25, 25, 200)
+}
   
   @media (prefers-reduced-motion: no-preference) {
   * {
@@ -137,5 +139,12 @@ nav > ul > li:hover {
       <h4 class="subhead" id="stun">Stun</h4><p>The Stun effect will cause a bright white flash on the opponent's screen and temporarily prevent them from seeing your Guard indicator.</p>
       <h4 class="subhead" id="ledge">Ledging</h4><p>Ledging occurs when an attack or maneuver knocks an opponent against a ledge, causing them to fall off that ledge. Any move that can Wallsplat or Unbalance can Ledge an opponent; however, some moves can Ledge that cannot cause either of those effects. Falling off a ledge will damage an opponent if the fall is short, or immedietaly kill them if it is a high ledge or one above a hazard.</p>
     </section>
+	<section id="resources" class="main section">
+	<h2 class="section-title">Additional Resources</2>
+		<div class="list"><ul id="list">
+			<li><a class="link" href="https://www.reddit.com/r/forhonor/">For Honor Subreddit:</a> Connect with other members of the community</li>
+			<li><a class="link" href="https://forhonorinfohub.com/">Information Hub:</a> Detailed breakdowns of every character, including movesets, optimal punishes, advice, and more.</li>
+		</ul>
+	</section>
   </main>
 </html>
