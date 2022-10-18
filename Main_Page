@@ -45,7 +45,7 @@ nav > ul > li:hover {
     <title>ForHonorCombatBasics</title>
   </head>
   <main id="main-doc">
-    <div class="logo"><img src="https://th.bing.com/th/id/OIP.F0MnkpjSxWa8rbDNtS0yWgHaEK?pid=ImgDet&rs=1"></div>
+    <div class="logo"><img src="https://th.bing.com/th/id/OIP.F0MnkpjSxWa8rbDNtS0yWgHaEK?pid=ImgDet&rs=1" alt="for_honor_logo" loading="lazy"></div>
     <nav id="navbar">
       <header><h2 class="section-title">Introduction to For Honor Combat</h2></header>
         <ul>
