@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,12 +7,13 @@
 .logo{
   width: auto; height: 500px; margin: 20px auto; 
 }
-div{display: flex; justify-content: center; }
+div{display: flex; justify-content: center;}
 img{max-width: 100%; height: auto;}
+
 h2{text-align: center; font-size: 40px; }
 h4{font-size: 30px; }
 p{font-size: 20px; }
-h4, p{margin: 40px 40px; }
+h4, p{margin: 100px 100px; }
 .special{text-align: center; }
 ul{font-size: 20px; text-align: left; list-style: inside; list-style-position: inside; padding-left: 0; display: inline-block;}
 nav {color: white; }
@@ -45,7 +47,7 @@ nav > ul > li:hover {
     <title>ForHonorCombatBasics</title>
   </head>
   <main id="main-doc">
-    <div class="logo"><img src="https://th.bing.com/th/id/OIP.F0MnkpjSxWa8rbDNtS0yWgHaEK?pid=ImgDet&rs=1" alt="for_honor_logo" loading="lazy"></div>
+    <div class="logo"><img src="https://th.bing.com/th/id/OIP.F0MnkpjSxWa8rbDNtS0yWgHaEK?pid=ImgDet&rs=1"></div>
     <nav id="navbar">
       <header><h2 class="section-title">Introduction to For Honor Combat</h2></header>
         <ul>
@@ -69,9 +71,13 @@ nav > ul > li:hover {
     </section>
     <section id="Basic_Mechanics_&_User_Interface_(UI)" class="main-section">
       <header><h2 class="section-title">Basic Mechanics & User Interface (UI)</h2></header>
+	<center><img src="https://i.imgur.com/E6v8GIE.png" alt="Image not available" id="fhui"></center>
 	<h4 class="subhead" id="lockon">Lock-On</h4>
 		<p>Hold L2 to lock onto an opponent. The combat system is based on this lock-on; most maneuvers can only be performed while locked onto an opponent. Locking on focuses the camera on an opponent and activates the combat UI for both yourself and the opponent. If there is no enemy nearby, holding L2 will still activate your own combat UI.</p>
-    	<h4 class="subhead" id="ai">AI Soldiers</h4>
+    	<h4 class="subhead" id="stamina">Stamina</h4>
+		<p>Stamina is a resource that is consumed by most offensive actions. Your current Stamina is indicated by the green bar underneath your health; this will deplete as you use up your Stamina. The bar will refill automatically after not attacking for a short time.</p>
+		<p>If your stamina meter reaches zero, it will turn grey and slowly refill. While this is occuring, you are in the Out-of-Stamina state (OoS). While OoS, your offensive capabilities are essentially non-existent. Most attacks cannot be used, you cannot Feint attacks, and any offensive maneuver that is allowed is substantially slower. You can still take defensive actions like blocking, parrying, dodging, and counter-guard breaking. While OoS, any Throw or Parry will Unbalance you.</p>
+	<h4 class="subhead" id="ai">AI Soldiers</h4>
 		<p>In objective-based gamemodes such as Dominion and Breach, there will be basic AI-controlled soldiers that automatically spawn for both teams. These AI soldiers are different from Bots, which are simply computer-controlled characters that otherwise behave exactly like a human player. The AI's exact role depends on the gamemode. All modes with AI have melee units. These have very little health and damage (although both values are higher in Breach), but can still be dangerous if you are swarmed by them. They also are incapable of blocking attacks. In addition, Breach has two more types: Archers and Officers. Archers target and damage other enemy AI units with arrows. Officers are larger units who have much higher health and damage; they can also block your attacks. However, unlike other AI units, you can <a class="nav-link" href="#execution">Execute</a> them, granting the same benefits as Executing a normal player.</p>
 	<h4 class="subhead" id="feats">Feats</h4>
 		<p>Feats are powerful abilities you unlock throughout the course of any match against multiple opponents (feats are <b>not</b> available in 1v1 modes). Any action, from killing an enemy to capturing an objective, generates points towards unlocking your feats. There are four tiers of feats, with each successive tier becoming more powerful while also taking longer to unlock. Every character can select one feat for each tier. Although what feats you have access to vary by character, everyone has 12 to choose from: 3 options per tier across 4 tiers.</p>
